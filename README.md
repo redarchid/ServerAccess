@@ -25,8 +25,23 @@ dependencies {
 ```
 
 ## How to use it
+there are 4 functions that can be called in this ServerAccess: Call, Upload, Download, GetStreamAccess, Raw.
 
+### Call
+Request to api with 4 method: GET,POST,PUT,DELETE or you can input other type method.
+```java
+ServerAccess.Call(context, [method], [api_url], [auth], [json_body], new ServerAccess.Listener() {
+            @Override
+            public void OnRequestSuccess(ResponseData responseData) {
 
+            }
+
+            @Override
+            public void OnRequestFailed(ResponseData responseData) {
+
+            }
+        });
+```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

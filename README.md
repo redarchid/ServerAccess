@@ -7,7 +7,7 @@ Simple get data from api.
 
 Add it in your root build.gradle at the end of repositories:
 
-```
+```gradle
 allprojects {
 	repositories {
 		...
@@ -18,7 +18,7 @@ allprojects {
 
 ### Step 2. Add the dependency
 
-```
+```gradle
 dependencies {
 	implementation 'com.github.redarchid:ServerAccess:0.1.0'
 }

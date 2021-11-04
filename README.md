@@ -9,26 +9,19 @@ Add it in your root build.gradle at the end of repositories:
 
 ```
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
+}
 ```
 
-## Usage
+Step 2. Add the dependency
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+```
+dependencies {
+	implementation 'com.gitlab.jus_tomat:server-access:v0.1.0'
+}
 ```
 
 ## Contributing

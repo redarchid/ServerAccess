@@ -20,7 +20,7 @@ allprojects {
 
 ```
 dependencies {
-	implementation 'com.gitlab.jus_tomat:server-access:0.1.0'
+	implementation 'com.github.redarchid:ServerAccess:0.1.0'
 }
 ```
 

@@ -33,15 +33,44 @@ Request to api with 4 method: GET,POST,PUT,DELETE or you can input other type me
 ServerAccess.Call(context, [method], [api_url], [auth], [json_body], new ServerAccess.Listener() {
             @Override
             public void OnRequestSuccess(ResponseData responseData) {
-
+		//...write some code
             }
 
             @Override
             public void OnRequestFailed(ResponseData responseData) {
-
+	    	//...write some code
             }
         });
 ```
+
+example:
+```java
+ServerAccess.Call(
+	this, // Context
+	ServerAccess.METHOD_POST, // Method
+	"http://127.0.0.1/requestdata/api", // URL API
+	"xgahusbd78bt617btusbqt728b12", // Auth
+	body.toString(), // JSON body
+	new ServerAccess.Listener() { // Result listener
+                @Override
+                public void OnRequestSuccess(ResponseData response) {
+                    log.d(TAG,response.getResultData());
+                }
+
+                @Override
+                public void OnRequestFailed(ResponseData response) {
+		    log.e(TAG,response.getResultData());
+                }
+            });
+```
+
+### Upload
+
+### Download
+
+### GetAccessStream
+
+### Raw
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

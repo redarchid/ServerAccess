@@ -16,13 +16,17 @@ allprojects {
 }
 ```
 
-### Step 2. Add the dependency
+### Step 2. Add the dependency [![](https://jitpack.io/v/redarchid/ServerAccess.svg)](https://jitpack.io/#redarchid/ServerAccess)
 
 ```gradle
 dependencies {
 	implementation 'com.github.redarchid:ServerAccess:0.1.0'
 }
 ```
+
+## How to use it
+
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

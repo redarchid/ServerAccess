@@ -20,7 +20,7 @@ Step 2. Add the dependency
 
 ```
 dependencies {
-	implementation 'com.gitlab.jus_tomat:server-access:v0.1.0'
+	implementation 'com.gitlab.jus_tomat:server-access:0.1.0'
 }
 ```
 

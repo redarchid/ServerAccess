@@ -1,2 +1,3 @@
+include ':ServerAccess'
 include ':app'
 rootProject.name = "ServerAccessApp"

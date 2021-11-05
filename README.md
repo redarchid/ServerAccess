@@ -174,12 +174,12 @@ All the above functions use laravel rest api as the basic structure. if you take
 ServerAccess.Raw(Context, [METHOD], [URL API], [HEADERS], [JSON BODY], new ServerAccess.RawListener() {
             	@Override
             	public void OnRequestSuccess(ResponseData response) {
-                
+                	//... write some code
             	}
 
             	@Override
             	public void OnRequestFailed(ResponseData response) {
-	
+			//... write some code
             	}
         });
 
@@ -188,21 +188,21 @@ ServerAccess.Raw(Context, [METHOD], [URL API], [HEADERS], [JSON BODY], new Serve
 Example:
 ```java
 ServerAccess.Raw(
-	context, 
-	ServerAccess.METHOD_GET, 
-	URLCons.URL_LOGIN(context), 
-	ServerAccess.DEFAULT_HEADERS(), 
-	json.toString(), 
-	new ServerAccess.RawListener() {
-            @Override
-            public void OnRequestSuccess(ResponseData response) {
-                
-            }
+		context, 
+		ServerAccess.METHOD_GET, 
+		URLCons.URL_LOGIN(context), 
+		ServerAccess.DEFAULT_HEADERS(), 
+		json.toString(), 
+		new ServerAccess.RawListener() {
+            	@Override
+            	public void OnRequestSuccess(ResponseData response) {
+			//... write some code
+            	}
 
-            @Override
-            public void OnRequestFailed(ResponseData response) {
-
-            }
+            	@Override
+            	public void OnRequestFailed(ResponseData response) {
+			//... write some code
+            	}
         });
 ```
 
